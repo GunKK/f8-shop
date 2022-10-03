@@ -1,0 +1,66 @@
+:root {
+    --text-color: #fff;
+    --primary-color: #FB6445;
+    --black-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Roboto;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+   width: 400px;
+   background-color: #fff;
+   min-height: 200px;
+}
+
+.modal-container__header {
+
+}
+
+.modal-container__body {
+
+}
+
+.modal-container__footer {
+
+}
+
+/* keyframe ant */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zooming {
+    from {
+        scale: 0;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link navbar__item--separate">Kênh người bán</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link navbar__item--separate">Trở thành người bán shoppe</a>
+                    </li>
+                    <li class="navbar__item navbar__item-hasQR">
+                        <a href="" class="navbar__item-link navbar__item--separate ">Tải ứng dụng</a>
+
+                        <!-- QR code -->
+                        <div class="navbar__QR">
+                            <img src="./assets/img/QRcode.png" class="navbar__QR-img" alt="">
+                            <div class="navbar__QR-download">
+                                <img src="./assets/img/appStore.png" alt="" class="navbar__QR-download-app">
+                                <img src="./assets/img/chStore.png" alt="" class="navbar__QR-download-app">
+                                <img src="./assets/img/gallery.png" alt="" class="navbar__QR-download-app">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar__item navbar__connect ">
+                        <div>Kết nối</div>
+                        <a href="" class="navbar__connect-item-link">
+                            <i class="navbar__icon fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="navbar__connect-item-link">
+                            <i class="navbar__icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar__list">
+                    <li class="navbar__item navbar__item-has-notify">
+                        <a href="" class="navbar__item-link">
+                            <i class="navbar__icon fa-regular fa-bell"></i>    
+                            Thông báo
+                        </a>
+                        <!-- notify -->
+                        <div class="navbar__notify">
+                            <div class="navbar__notify-header">
+                                Thông báo mới nhận
+                            </div>
+                            <ul class="navbar__notify-list">
+                                <li class="navbar__notify-item navbar__notify-item--viewed">
+                                    <a href="" class="navbar__notify-item-link">
+                                       <img src="./assets/img/notify.png" alt="" class="navbar__notify-item-img">
+                                        <div class="navbar__notify-item-content">
+                                            <div class="navbar__notify-item-title">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </div>
+                                            <div class="navbar__notify-item-desc">
+                                                Cras fringilla augue at justo iaculis, nec eleifend velit tincidunt. Vivamus nec malesuada dolor. Nunc tempor iaculis libero eget eleifend. Fusce vitae enim ornare, varius libero in, sagittis ex.
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="navbar__notify-item">
+                                    <a href="" class="navbar__notify-item-link">
+                                       <img src="./assets/img/notify.png" alt="" class="navbar__notify-item-img">
+                                        <div class="navbar__notify-item-content">
+                                            <div class="navbar__notify-item-title">
+                                                Suspendisse ullamcorper dolor faucibus justo congue rutrum.
+                                            </div>
+                                            <div class="navbar__notify-item-desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel finibus metus. Quisque malesuada magna quis posuere scelerisque. Nulla maximus lobortis elit sed luctus. 
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="navbar__notify-item">
+                                    <a href="" class="navbar__notify-item-link">
+                                       <img src="./assets/img/notify.png" alt="" class="navbar__notify-item-img">
+                                        <div class="navbar__notify-item-content">
+                                            <div class="navbar__notify-item-title">
+                                                Donec quis ligula molestie, dapibus libero vitae, sollicitudin neque.
+                                            </div>
+                                            <div class="navbar__notify-item-desc">
+                                                Cras vehicula placerat posuere. Quisque porta sem at nisi hendrerit commodo. Praesent non nunc a lorem interdum blandit at fermentum enim. Nam quis volutpat purus.
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="navbar__notify-footer">
+                                <button class="navbar__notify-view-all">Xem tất cả</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__item-link">
+                            <i class="navbar__icon fa-regular fa-circle-question"></i>    
+                            Hỗ trợ
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">
+                            <i class="navbar__icon fa-regular fa-globe"></i>
+                            Ngôn ngữ
+                        </a>
+                    </li>
+                    <li class="navbar__item navbar__item--separate">
+                        <a href="" class="navbar__item-link">Đăng kí</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">Đăng nhập</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="modal">
+        <div class="modal-container">
+            
+        </div>
+    </div>
+</body>
+</html>
