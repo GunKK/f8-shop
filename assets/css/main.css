@@ -211,4 +211,133 @@
     padding: 12px 0px;
 }
 
+.auth-form {
+    padding: 0 24px;
+}
+
+.signup-form {
+    display: none;
+}
+
+.login-form {
+    /* display: none; */
+}
+
+.auth-form__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+}
+
+.auth-form__heading {
+    font-size: 2.4rem;
+    font-weight: 500;
+    user-select: none;
+}
+
+.auth-form__switch {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.auth-form__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form__label {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.auth-form__input {
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    border: 1px solid  #ccc;
+}
+
+.auth-form__input:focus {
+    outline-color: var(--primary-color);
+}
+
+.auth-form__policy,
+.auth__login-support {
+    margin: 24px;
+    font-size: 1.2rem;
+}
+
+.auth-form__policy a {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+} 
+
+.auth-form__aside { 
+    text-align: center;
+}
+
+.btn--signup {
+    background-color: #42B72A;
+}
+
+.btn--login {
+    background-color: #0B83ED;
+}
+
+.auth-form__footer {
+    margin: 24px 0px;
+}
+
+.auth-form__social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-form__social-item {
+    flex: 1;
+}
+
+.btn--facebook {
+    background-color: #0077F7;
+}
+
+.btn--google {
+    background-color: #E94235;
+}
+
+.auth-form__login-support {
+    margin: 12px 0px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-form__login-remember-pass {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.auth-form__login-remember-pass-checkbox {
+    margin-right: 4px;
+}
+
+.auth-form__login-forgot-pass {
+    font-size: 1.4rem;
+    color: #0077F7;
+    text-decoration: none;
+}
+
+.auth-form__login-forgot-pass:hover {
+    text-decoration: underline;
+}
+
 

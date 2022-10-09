@@ -131,7 +131,79 @@
 
     <div class="modal">
         <div class="modal-container">
-            
+            <div class="modal-close">
+                <i class="fa-regular fa-xmark modal-close-icon"></i>
+            </div>
+            <div class="modal-inner">
+                <!-- signup form -->
+                <div class="auth-form signup-form">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__body">
+                        <div class="auth-form__group">
+                            <label for="username" class="auth-form__label"><i class="fa-regular fa-user"></i> User name</label>
+                            <input type="text" class="auth-form__input" id="username" placeholder="enter your username">
+                        </div>
+                        <div class="auth-form__group">
+                            <label for="password" class="auth-form__label"><i class="fa-regular fa-key"></i> Password</label>
+                            <input type="password" class="auth-form__input" id="password" placeholder="enter your password">
+                        </div>
+                        <div class="auth-form__group">
+                            <label for="repassword" class="auth-form__label"><i class="fa-regular fa-key"></i> Re-password </label>
+                            <input type="password" class="auth-form__input" id="repassword" placeholder="re enter your password">
+                        </div>
+                    </div>
+                    <div class="auth-form__policy">
+                        Khi đăng ký, bạn đã đồng ý với <a href="">Điều khoản Dịch vụ</a> và <a href="">Chính sách Quyền riêng tư</a>, gồm cả sử dụng Cookie.
+                    </div>
+                    <div class="auth-form__aside">
+                        <button class="btn btn--signup">ĐĂNG KÍ</button>
+                    </div>
+                    <div class="auth-form__footer">
+                        <div class="auth-form__social">
+                            <button class="btn auth-form__social-item btn--facebook"><i class="fa-brands fa-facebook"></i> login with facebook</button>
+                            <!-- <span class="auth-form__social-item"></span> -->
+                            <button class="btn auth-form__social-item btn--google"><i class="fa-brands fa-google"></i> login with google</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- login form -->
+                <div class="auth-form login-form">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__body">
+                        <div class="auth-form__group">
+                            <label for="username" class="auth-form__label"><i class="fa-regular fa-user"></i> User name</label>
+                            <input type="text" class="auth-form__input" id="username" placeholder="enter your username">
+                        </div>
+                        <div class="auth-form__group">
+                            <label for="password" class="auth-form__label"><i class="fa-regular fa-key"></i> Password</label>
+                            <input type="password" class="auth-form__input" id="password" placeholder="enter your password">
+                        </div>
+                    </div>
+                    <div class="auth-form__login-support">
+                        <div class="auth-form__login-remember-pass">
+                            <input type="checkbox" class="auth-form__login-remember-pass-checkbox"> <span>Nhớ mật khẩu</span>
+                        </div>
+                        <a href="" class="auth-form__login-forgot-pass">Quên mật khẩu?</a>
+                    </div>
+                    <div class="auth-form__aside">
+                        <button class="btn btn--login">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="auth-form__footer">
+                        <div class="auth-form__social">
+                            <button class="btn auth-form__social-item btn--facebook"><i class="fa-brands fa-facebook"></i> login with facebook</button>
+                            <!-- <span class="auth-form__social-item"></span> -->
+                            <button class="btn auth-form__social-item btn--google"><i class="fa-brands fa-google"></i> login with google</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
