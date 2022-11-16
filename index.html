@@ -281,16 +281,15 @@
                                 Danh mục
                             </h3>
                             <div class="category__body">
-                                <a href="" class="category__body-item-link category__body-item-link--active">Laptop</a>
-                                <a href="" class="category__body-item-link">Tablet</a>
-                                <a href="" class="category__body-item-link">SmartPhone</a>
-                                <a href="" class="category__body-item-link">Watch</a>
-                                <a href="" class="category__body-item-link">Phụ kiện</a>
-                                <a href="" class="category__body-item-link">Sim, Thẻ cào</a>
+                                <a href="#" class="category__body-item-link category__body-item-link--active">Sản phẩm</a>
+                                <a href="#" class="category__body-item-link">Sữa đặc</a>
+                                <a href="#" class="category__body-item-link">Sữa tươi</a>
+                                <a href="#" class="category__body-item-link">Sữa bột</a>
+                                <a href="#" class="category__body-item-link">Sữa đậu nành</a>
                             </div>
                         </div>
                     </div>
-                    <div class="grid__col-10 home-product" >
+                    <div class="grid__col-10" >
                         <div class="grid">
                             <div class="grid__row">
                                 <!-- search-filter -->
@@ -302,10 +301,19 @@
                                         <a href="#" class="btn search-filter__btn btn--active">Phổ biến</a>
                                         <a href="#" class="btn search-filter__btn">Mới nhất</a>
                                         <a href="#" class="btn search-filter__btn">Bán chạy</a>
-                                        <select class="search-filter__select" name="" id="">
-                                            <option class="search-filter__select-option" value="">Tăng dần</option>
-                                            <option class="search-filter__select-option" value="">Giảm dần</option>
-                                        </select>
+                                        <form class="search-filter__select">
+                                            <input type="text" class="search-filter__select-input" value="Giá tăng dần" readonly>
+                                            <span class="search-filter__select-icon">
+                                                <i class="fa-regular fa-angle-down"></i>
+                                            </span>
+                                            <div class="search-filter__select-body">
+                                                <div class="search-filter__select-list">
+                                                    <a class="search-filter__select-option" href="#">Giá tăng dần</a>
+                                                    <a class="search-filter__select-option" href="#">Giá giảm dần</a>
+                                                    <a class="search-filter__select-option" href="#">Giảm giá nhiều</a>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="search-filter-wrap">
                                         <span class="search-filter__pagination"><span class="pagination-current">1</span>/14</span>
@@ -317,26 +325,34 @@
                                 </div>
                             </div>
                             <div class="grid__row">
-                                <div class="grid__full">
-                                    <div class="product-list">
-                                        <div class="product-list__row">
-                                            <div class="grid__col-2-4">
+                                <div class="product-list">
+                                    <div class="grid__row">
+                                        <div class="grid__col-2-4">
+                                            <a href="#" class="product__link">
                                                 <div class="product__item">
-                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/Anchor.jpg) ;"></div>
+                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/Anchor.jpg) ;">
+                                                        <div class="product__item--soldout">
+                                                            Sold out
+                                                        </div>
+                                                    </div>
                                                     <div class="product__item-body">
-                                                        <div class="product__item-title">Thùng 12 hộp sữa tươi it béo Anchor</div>
+                                                        <div class="product__item-title">Thùng 12 hộp sữa tươi it béo Anchor gấp đôi canxi 100%</div>
                                                         <div class="product__item-deal">
                                                             <span class="product__item-deal-save">
                                                                 Giảm <sup>đ</sup> 30.000
                                                             </span>
-                                                            <span class="product__item-deal-hot">Mua kèm deal sốc</span>
+                                                            <span class="product__item-deal-hot">Tiết kiệm 10k</span>
                                                         </div>
                                                         <div class="product__item-price-wrap">
-                                                            <span class="product__item-price-origin"><span>đ</span> 220.000</span>
-                                                            <span class="product__item-price-sale"><span>đ</span> 190.000</span>
+                                                            <span class="product__item-price-origin"><span class="text-sm">đ</span>220.000</span>
+                                                            <span class="product__item-price-sale"><span class="text-sm">đ</span>190.000</span>
                                                             <span class="product__item-freeship">free <i class="fa-light fa-truck-fast"></i></span>
                                                         </div>
                                                         <div class="product__item-action">
+                                                            <span class="product__item-heart product__item-heart--liked">
+                                                                <i class="product__item-heart-empty fa-light fa-heart"></i>
+                                                                <i class="product__item-heart-fill fa-solid fa-heart"></i>
+                                                            </span>
                                                             <span class="product__item-rating">
                                                                 <i class="fa-solid fa-star"></i>
                                                                 <i class="fa-solid fa-star"></i>
@@ -347,31 +363,41 @@
                                                             <span class="product__item-sold">Đã bán 881</span>
                                                         </div>
                                                         <div class="product__item-location">Hà Nội</div>
-                                                        <div class="product__item-badge">Mall</div>                                                        
+                                                        <div class="product__item-badge"><span>Mall</span></div>                                                        
                                                         <div class="product__item-saleoff">
                                                             <span class="product__item-saleoff-percent">53%</span>
                                                             <span class="product__item-saleoff-title">Giảm</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="grid__col-2-4">
+                                            </a>
+                                        </div>
+                                        <div class="grid__col-2-4">
+                                            <a href="#" class="product__link">
                                                 <div class="product__item">
-                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/vinamilk.jpg) ;"></div>
+                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/vinamilk.jpg) ;">
+                                                        <div class="product__item--soldout">
+                                                            <span>Sold out</span>
+                                                        </div>
+                                                    </div>
                                                     <div class="product__item-body">
                                                         <div class="product__item-title">Thùng 48 hộp Vinamilk 180ml</div>
                                                         <div class="product__item-deal">
                                                             <span class="product__item-deal-save">
-                                                                Giảm <sup>đ</sup> 30.000
+                                                                Giảm <sup>đ</sup> 20k đến 100k
                                                             </span>
                                                             <span class="product__item-deal-hot">Mua kèm deal sốc</span>
                                                         </div>
                                                         <div class="product__item-price-wrap">
-                                                            <span class="product__item-price-origin"><span>đ</span> 220.000</span>
-                                                            <span class="product__item-price-sale"><span>đ</span> 190.000</span>
+                                                            <span class="product__item-price-origin"><span class="text-sm">đ</span>220.000</span>
+                                                            <span class="product__item-price-sale"><span class="text-sm">đ</span>190.000</span>
                                                             <span class="product__item-freeship">free <i class="fa-light fa-truck-fast"></i></span>
                                                         </div>
                                                         <div class="product__item-action">
+                                                            <span class="product__item-heart product__item-heart--liked">
+                                                                <i class="product__item-heart-empty fa-light fa-heart"></i>
+                                                                <i class="product__item-heart-fill fa-solid fa-heart"></i>
+                                                            </span>
                                                             <span class="product__item-rating">
                                                                 <i class="fa-solid fa-star"></i>
                                                                 <i class="fa-solid fa-star"></i>
@@ -382,31 +408,37 @@
                                                             <span class="product__item-sold">Đã bán 881</span>
                                                         </div>
                                                         <div class="product__item-location">Hà Nội</div>
-                                                        <div class="product__item-badge">Mall</div>                                                        
+                                                        <div class="product__item-badge"><span>Mall</span></div>                                                        
                                                         <div class="product__item-saleoff">
                                                             <span class="product__item-saleoff-percent">53%</span>
                                                             <span class="product__item-saleoff-title">Giảm</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="grid__col-2-4">
+                                            </a>
+                                        </div>
+                                        <div class="grid__col-2-4">
+                                            <a href="#" class="product__link">
                                                 <div class="product__item">
                                                     <div class="product__item-img" style="background-image: url(./assets/img/products/Dalat.jpg) ;"></div>
                                                     <div class="product__item-body">
                                                         <div class="product__item-title">Thùng 48 hộp Dalat 180ml</div>
                                                         <div class="product__item-deal">
                                                             <span class="product__item-deal-save">
-                                                                Giảm <sup>đ</sup> 30.000
+                                                                Tiết kiệm <sup>đ</sup> 10k
                                                             </span>
                                                             <span class="product__item-deal-hot">Mua kèm deal sốc</span>
                                                         </div>
                                                         <div class="product__item-price-wrap">
-                                                            <span class="product__item-price-origin"><span>đ</span> 220.000</span>
-                                                            <span class="product__item-price-sale"><span>đ</span> 190.000</span>
+                                                            <span class="product__item-price-origin"><span class="text-sm">đ</span>220.000</span>
+                                                            <span class="product__item-price-sale"><span class="text-sm">đ</span>190.000</span>
                                                             <span class="product__item-freeship">free <i class="fa-light fa-truck-fast"></i></span>
                                                         </div>
                                                         <div class="product__item-action">
+                                                            <span class="product__item-heart">
+                                                                <i class="product__item-heart-empty fa-light fa-heart"></i>
+                                                                <i class="product__item-heart-fill fa-solid fa-heart"></i>
+                                                            </span>
                                                             <span class="product__item-rating">
                                                                 <i class="fa-solid fa-star"></i>
                                                                 <i class="fa-solid fa-star"></i>
@@ -417,15 +449,17 @@
                                                             <span class="product__item-sold">Đã bán 881</span>
                                                         </div>
                                                         <div class="product__item-location">Hà Nội</div>
-                                                        <div class="product__item-badge">Mall</div>                                                        
+                                                        <div class="product__item-badge"><span>Mall</span></div>                                                        
                                                         <div class="product__item-saleoff">
                                                             <span class="product__item-saleoff-percent">53%</span>
                                                             <span class="product__item-saleoff-title">Giảm</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="grid__col-2-4">
+                                            </a>
+                                        </div>
+                                        <div class="grid__col-2-4">
+                                            <a href="#" class="product__link">
                                                 <div class="product__item">
                                                     <div class="product__item-img" style="background-image: url(./assets/img/products/harvey.jpg) ;"></div>
                                                     <div class="product__item-body">
@@ -437,11 +471,15 @@
                                                             <span class="product__item-deal-hot">Mua kèm deal sốc</span>
                                                         </div>
                                                         <div class="product__item-price-wrap">
-                                                            <span class="product__item-price-origin"><span>đ</span> 220.000</span>
-                                                            <span class="product__item-price-sale"><span>đ</span> 190.000</span>
+                                                            <span class="product__item-price-origin"><span class="text-sm">đ</span>220.000</span>
+                                                            <span class="product__item-price-sale"><span class="text-sm">đ</span>190.000</span>
                                                             <span class="product__item-freeship">free <i class="fa-light fa-truck-fast"></i></span>
                                                         </div>
                                                         <div class="product__item-action">
+                                                            <span class="product__item-heart">
+                                                                <i class="product__item-heart-empty fa-light fa-heart"></i>
+                                                                <i class="product__item-heart-fill fa-solid fa-heart"></i>
+                                                            </span>
                                                             <span class="product__item-rating">
                                                                 <i class="fa-solid fa-star"></i>
                                                                 <i class="fa-solid fa-star"></i>
@@ -452,31 +490,37 @@
                                                             <span class="product__item-sold">Đã bán 881</span>
                                                         </div>
                                                         <div class="product__item-location">Hà Nội</div>
-                                                        <div class="product__item-badge">Mall</div>                                                        
+                                                        <div class="product__item-badge"><span>Mall</span></div>                                                        
                                                         <div class="product__item-saleoff">
                                                             <span class="product__item-saleoff-percent">53%</span>
                                                             <span class="product__item-saleoff-title">Giảm</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="grid__col-2-4">
+                                            </a>
+                                        </div>
+                                        <div class="grid__col-2-4">
+                                            <a href="#" class="product__link">
                                                 <div class="product__item">
                                                     <div class="product__item-img" style="background-image: url(./assets/img/products/duchLady.jpg) ;"></div>
                                                     <div class="product__item-body">
                                                         <div class="product__item-title">Thùng 48 hộp Ducth Lady 180ml</div>
                                                         <div class="product__item-deal">
                                                             <span class="product__item-deal-save">
-                                                                Giảm <sup>đ</sup> 30.000
+                                                                Giảm <sup>đ</sup> 20k đến 100k
                                                             </span>
                                                             <span class="product__item-deal-hot">Mua kèm deal sốc</span>
                                                         </div>
                                                         <div class="product__item-price-wrap">
-                                                            <span class="product__item-price-origin"><span>đ</span> 220.000</span>
-                                                            <span class="product__item-price-sale"><span>đ</span> 190.000</span>
+                                                            <span class="product__item-price-origin"><span class="text-sm">đ</span>220.000</span>
+                                                            <span class="product__item-price-sale"><span class="text-sm">đ</span>190.000</span>
                                                             <span class="product__item-freeship">free <i class="fa-light fa-truck-fast"></i></span>
                                                         </div>
                                                         <div class="product__item-action">
+                                                            <span class="product__item-heart">
+                                                                <i class="product__item-heart-empty fa-light fa-heart"></i>
+                                                                <i class="product__item-heart-fill fa-solid fa-heart"></i>
+                                                            </span>
                                                             <span class="product__item-rating">
                                                                 <i class="fa-solid fa-star"></i>
                                                                 <i class="fa-solid fa-star"></i>
@@ -487,21 +531,23 @@
                                                             <span class="product__item-sold">Đã bán 881</span>
                                                         </div>
                                                         <div class="product__item-location">Hà Nội</div>
-                                                        <div class="product__item-badge">Mall</div>                                                        
+                                                        <div class="product__item-badge"><span>Mall</span></div>                                                        
                                                         <div class="product__item-saleoff">
                                                             <span class="product__item-saleoff-percent">53%</span>
                                                             <span class="product__item-saleoff-title">Giảm</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
-                                        <div class="product-list__row">
-                                            <div class="grid__col-2-4">
+                                    </div>
+                                    <div class="grid__row">
+                                        <div class="grid__col-2-4">
+                                            <a href="#" class="product__link">
                                                 <div class="product__item">
-                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/inex.jpg) ;"></div>
+                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/Anchor.jpg) ;"></div>
                                                     <div class="product__item-body">
-                                                        <div class="product__item-title">Thùng 48 hộp Inex 180ml</div>
+                                                        <div class="product__item-title">Thùng 12 hộp sữa tươi it béo Anchor gấp đôi canxi 100%</div>
                                                         <div class="product__item-deal">
                                                             <span class="product__item-deal-save">
                                                                 Giảm <sup>đ</sup> 30.000
@@ -509,11 +555,15 @@
                                                             <span class="product__item-deal-hot">Mua kèm deal sốc</span>
                                                         </div>
                                                         <div class="product__item-price-wrap">
-                                                            <span class="product__item-price-origin"><span>đ</span> 220.000</span>
-                                                            <span class="product__item-price-sale"><span>đ</span> 190.000</span>
+                                                            <span class="product__item-price-origin"><span class="text-sm">đ</span>220.000</span>
+                                                            <span class="product__item-price-sale"><span class="text-sm">đ</span>190.000</span>
                                                             <span class="product__item-freeship">free <i class="fa-light fa-truck-fast"></i></span>
                                                         </div>
                                                         <div class="product__item-action">
+                                                            <span class="product__item-heart product__item-heart--liked">
+                                                                <i class="product__item-heart-empty fa-light fa-heart"></i>
+                                                                <i class="product__item-heart-fill fa-solid fa-heart"></i>
+                                                            </span>
                                                             <span class="product__item-rating">
                                                                 <i class="fa-solid fa-star"></i>
                                                                 <i class="fa-solid fa-star"></i>
@@ -524,31 +574,37 @@
                                                             <span class="product__item-sold">Đã bán 881</span>
                                                         </div>
                                                         <div class="product__item-location">Hà Nội</div>
-                                                        <div class="product__item-badge">Mall</div>                                                        
+                                                        <div class="product__item-badge"><span>Mall</span></div>                                                        
                                                         <div class="product__item-saleoff">
                                                             <span class="product__item-saleoff-percent">53%</span>
                                                             <span class="product__item-saleoff-title">Giảm</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="grid__col-2-4">
+                                            </a>
+                                        </div>
+                                        <div class="grid__col-2-4">
+                                            <a href="#" class="product__link">
                                                 <div class="product__item">
-                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/nestle.jpg) ;"></div>
+                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/vinamilk.jpg) ;"></div>
                                                     <div class="product__item-body">
-                                                        <div class="product__item-title">Thùng 48 hộp Nestle 180ml</div>
+                                                        <div class="product__item-title">Thùng 48 hộp Vinamilk 180ml</div>
                                                         <div class="product__item-deal">
                                                             <span class="product__item-deal-save">
-                                                                Giảm <sup>đ</sup> 30.000
+                                                                Giảm <sup>đ</sup> 20k đến 100k
                                                             </span>
                                                             <span class="product__item-deal-hot">Mua kèm deal sốc</span>
                                                         </div>
                                                         <div class="product__item-price-wrap">
-                                                            <span class="product__item-price-origin"><span>đ</span> 220.000</span>
-                                                            <span class="product__item-price-sale"><span>đ</span> 190.000</span>
+                                                            <span class="product__item-price-origin"><span class="text-sm">đ</span>220.000</span>
+                                                            <span class="product__item-price-sale"><span class="text-sm">đ</span>190.000</span>
                                                             <span class="product__item-freeship">free <i class="fa-light fa-truck-fast"></i></span>
                                                         </div>
                                                         <div class="product__item-action">
+                                                            <span class="product__item-heart product__item-heart--liked">
+                                                                <i class="product__item-heart-empty fa-light fa-heart"></i>
+                                                                <i class="product__item-heart-fill fa-solid fa-heart"></i>
+                                                            </span>
                                                             <span class="product__item-rating">
                                                                 <i class="fa-solid fa-star"></i>
                                                                 <i class="fa-solid fa-star"></i>
@@ -559,31 +615,37 @@
                                                             <span class="product__item-sold">Đã bán 881</span>
                                                         </div>
                                                         <div class="product__item-location">Hà Nội</div>
-                                                        <div class="product__item-badge">Mall</div>                                                        
+                                                        <div class="product__item-badge"><span>Mall</span></div>                                                        
                                                         <div class="product__item-saleoff">
                                                             <span class="product__item-saleoff-percent">53%</span>
                                                             <span class="product__item-saleoff-title">Giảm</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="grid__col-2-4">
+                                            </a>
+                                        </div>
+                                        <div class="grid__col-2-4">
+                                            <a href="#" class="product__link">
                                                 <div class="product__item">
-                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/thMilk.jpg) ;"></div>
+                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/Dalat.jpg) ;"></div>
                                                     <div class="product__item-body">
-                                                        <div class="product__item-title">Thùng 48 hộp TH True Milk 180ml</div>
+                                                        <div class="product__item-title">Thùng 48 hộp Dalat 180ml</div>
                                                         <div class="product__item-deal">
                                                             <span class="product__item-deal-save">
-                                                                Giảm <sup>đ</sup> 30.000
+                                                                Tiết kiệm <sup>đ</sup> 10k
                                                             </span>
                                                             <span class="product__item-deal-hot">Mua kèm deal sốc</span>
                                                         </div>
                                                         <div class="product__item-price-wrap">
-                                                            <span class="product__item-price-origin"><span>đ</span> 220.000</span>
-                                                            <span class="product__item-price-sale"><span>đ</span> 190.000</span>
+                                                            <span class="product__item-price-origin"><span class="text-sm">đ</span>220.000</span>
+                                                            <span class="product__item-price-sale"><span class="text-sm">đ</span>190.000</span>
                                                             <span class="product__item-freeship">free <i class="fa-light fa-truck-fast"></i></span>
                                                         </div>
                                                         <div class="product__item-action">
+                                                            <span class="product__item-heart">
+                                                                <i class="product__item-heart-empty fa-light fa-heart"></i>
+                                                                <i class="product__item-heart-fill fa-solid fa-heart"></i>
+                                                            </span>
                                                             <span class="product__item-rating">
                                                                 <i class="fa-solid fa-star"></i>
                                                                 <i class="fa-solid fa-star"></i>
@@ -594,19 +656,21 @@
                                                             <span class="product__item-sold">Đã bán 881</span>
                                                         </div>
                                                         <div class="product__item-location">Hà Nội</div>
-                                                        <div class="product__item-badge">Mall</div>                                                        
+                                                        <div class="product__item-badge"><span>Mall</span></div>                                                        
                                                         <div class="product__item-saleoff">
                                                             <span class="product__item-saleoff-percent">53%</span>
                                                             <span class="product__item-saleoff-title">Giảm</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="grid__col-2-4">
+                                            </a>
+                                        </div>
+                                        <div class="grid__col-2-4">
+                                            <a href="#" class="product__link">
                                                 <div class="product__item">
-                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/oganic.jpg) ;"></div>
+                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/harvey.jpg) ;"></div>
                                                     <div class="product__item-body">
-                                                        <div class="product__item-title">Thùng 48 hộp Vinamilk ogainic 180ml</div>
+                                                        <div class="product__item-title">Thùng 48 hộp Harvey 180ml</div>
                                                         <div class="product__item-deal">
                                                             <span class="product__item-deal-save">
                                                                 Giảm <sup>đ</sup> 30.000
@@ -614,11 +678,15 @@
                                                             <span class="product__item-deal-hot">Mua kèm deal sốc</span>
                                                         </div>
                                                         <div class="product__item-price-wrap">
-                                                            <span class="product__item-price-origin"><span>đ</span> 220.000</span>
-                                                            <span class="product__item-price-sale"><span>đ</span> 190.000</span>
+                                                            <span class="product__item-price-origin"><span class="text-sm">đ</span>220.000</span>
+                                                            <span class="product__item-price-sale"><span class="text-sm">đ</span>190.000</span>
                                                             <span class="product__item-freeship">free <i class="fa-light fa-truck-fast"></i></span>
                                                         </div>
                                                         <div class="product__item-action">
+                                                            <span class="product__item-heart">
+                                                                <i class="product__item-heart-empty fa-light fa-heart"></i>
+                                                                <i class="product__item-heart-fill fa-solid fa-heart"></i>
+                                                            </span>
                                                             <span class="product__item-rating">
                                                                 <i class="fa-solid fa-star"></i>
                                                                 <i class="fa-solid fa-star"></i>
@@ -629,31 +697,37 @@
                                                             <span class="product__item-sold">Đã bán 881</span>
                                                         </div>
                                                         <div class="product__item-location">Hà Nội</div>
-                                                        <div class="product__item-badge">Mall</div>                                                        
+                                                        <div class="product__item-badge"><span>Mall</span></div>                                                        
                                                         <div class="product__item-saleoff">
                                                             <span class="product__item-saleoff-percent">53%</span>
                                                             <span class="product__item-saleoff-title">Giảm</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="grid__col-2-4">
+                                            </a>
+                                        </div>
+                                        <div class="grid__col-2-4">
+                                            <a href="#" class="product__link">
                                                 <div class="product__item">
-                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/TH_milk_s.jpg) ;"></div>
+                                                    <div class="product__item-img" style="background-image: url(./assets/img/products/duchLady.jpg) ;"></div>
                                                     <div class="product__item-body">
-                                                        <div class="product__item-title">Thùng 48 hộp TH Milk S 180ml</div>
+                                                        <div class="product__item-title">Thùng 48 hộp Ducth Lady 180ml</div>
                                                         <div class="product__item-deal">
                                                             <span class="product__item-deal-save">
-                                                                Giảm <sup>đ</sup> 30.000
+                                                                Giảm <sup>đ</sup> 20k đến 100k
                                                             </span>
                                                             <span class="product__item-deal-hot">Mua kèm deal sốc</span>
                                                         </div>
                                                         <div class="product__item-price-wrap">
-                                                            <span class="product__item-price-origin"><span>đ</span> 220.000</span>
-                                                            <span class="product__item-price-sale"><span>đ</span> 190.000</span>
+                                                            <span class="product__item-price-origin"><span class="text-sm">đ</span>220.000</span>
+                                                            <span class="product__item-price-sale"><span class="text-sm">đ</span>190.000</span>
                                                             <span class="product__item-freeship">free <i class="fa-light fa-truck-fast"></i></span>
                                                         </div>
                                                         <div class="product__item-action">
+                                                            <span class="product__item-heart">
+                                                                <i class="product__item-heart-empty fa-light fa-heart"></i>
+                                                                <i class="product__item-heart-fill fa-solid fa-heart"></i>
+                                                            </span>
                                                             <span class="product__item-rating">
                                                                 <i class="fa-solid fa-star"></i>
                                                                 <i class="fa-solid fa-star"></i>
@@ -664,14 +738,14 @@
                                                             <span class="product__item-sold">Đã bán 881</span>
                                                         </div>
                                                         <div class="product__item-location">Hà Nội</div>
-                                                        <div class="product__item-badge">Mall</div>                                                        
+                                                        <div class="product__item-badge"><span>Mall</span></div>                                                        
                                                         <div class="product__item-saleoff">
                                                             <span class="product__item-saleoff-percent">53%</span>
                                                             <span class="product__item-saleoff-title">Giảm</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
