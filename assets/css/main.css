@@ -487,11 +487,6 @@
     align-items: center;
 }
 
-.home-logo {
-    border-radius: 4px;
-    border: 1px solid var(--primary-color);
-}
-
 .home-logo-img {
     height: 50px;
     object-fit: contain;
@@ -956,22 +951,16 @@
     box-shadow: 1px 1px 1px #ccc;
 }
 
-.product-list {
-    border-radius: 2px;
-    min-height: 200px;
-}
-
-.product__link {
-    text-decoration: none;
-}
-
 .product__item {
+    text-decoration: none;
     box-shadow: 0px 0px 1px #ccc;
     border-radius: 2px;
     position: relative;
     background-color: #F5F5F5;
     transition: ease-in 0.1s;
     top: 0;
+    margin-top: 10px;
+    display: block;
 }
 
 .product__item:hover {
@@ -1161,6 +1150,20 @@
     flex-direction: column;
     justify-content: center;
     padding: 2px 4px;
+    width: 38px;
+}
+
+.product__item-saleoff::after {
+    content: "";
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-style: solid;
+    border-width: 0 19px 4px;
+    color: #FFD839;
+    border-color: currentColor currentColor transparent currentColor;
+    position: absolute;
 }
 
 .product__item-saleoff-percent {
@@ -1175,3 +1178,131 @@
     color: #fff;
     text-transform: uppercase;
 }   
+
+/* phân trang */
+.pagination {
+    width: 80%;
+    margin: 48px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.pagination__item {
+    margin: 12px;   
+}
+
+.pagination__item-link {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 2px;
+    color: #939393;
+    display: block;
+    min-width: 40px;
+    min-height: 30px;
+    line-height: 30px;
+}
+
+.pagination__item-link:hover {
+    color: var(--primary-color);
+}
+
+.pagination__item-link--active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.footer {
+    min-height: 200px;
+    border-top: 4px solid var(--primary-color);
+    padding: 5px;
+    background-color: #FBFBFB;
+}
+
+.footer__heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer__heading-fix {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer__item {
+    margin-bottom: 12px;
+}
+
+.footer__item-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #737373;
+}
+
+.footer__item-link:hover {
+    color: var(--primary-color);
+}
+
+.footer__payment-item {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #ccc;
+    padding: 4px;
+}
+
+.footer__payment-item > img {
+    height: 100%;
+}
+
+.footer__icon {
+    font-size: 1.6rem;
+    margin-right: 8px;
+}
+
+.footer__download {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer__download-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 0px;
+}
+
+.footer__download-img {
+    width: 50px;
+    margin-left: 6px;
+}
+
+.footer__copyright {
+    margin-top: 28px;
+    border-top: 2px solid #EEEEEE;
+    padding: 40px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer__copyright-link {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.footer__copyright-link:hover {
+    color: var(--primary-color);
+    transition: ease 0.2s;
+}

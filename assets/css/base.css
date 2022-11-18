@@ -29,7 +29,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -5px;
-    margin-bottom: 10px;
 }
 
 .grid__col-2 {
@@ -39,6 +38,11 @@
 
 .grid__col-2-4 {
     width: 20%;
+    padding: 0 5px;
+}
+
+.grid__col-3 {
+    width: 33.333%;
     padding: 0 5px;
 }
 
@@ -106,9 +110,10 @@ html {
 }
 
 .btn--disabled {
+    box-shadow: none !important;
     opacity: 0.5 !important;
     cursor: default !important;
-    background-color: #fff !important;
+    color: #CACACA !important;
 }
 
 .btn--active {
